@@ -10,9 +10,10 @@ export const THRESHOLDS = {
     UP: 1,        // 0 minutes downtime
     PARTIAL: 2,   // <9 minutes downtime
   } as const;
-  
+
+
   export const STATUS_COLORS = {
-    [STATUS.NO_DATA]: 'bg-gray-300',
+    [STATUS.NO_DATA]: 'bg-muted', 
     [STATUS.DOWN]: 'bg-red-500',
     [STATUS.UP]: 'bg-green-500',
     [STATUS.PARTIAL]: 'bg-orange-500',
